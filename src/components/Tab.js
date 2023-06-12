@@ -3,7 +3,7 @@ import React, {useState} from "react";
 
 
 const Tabs = ({tabs}) => {
-   const [tabClicked, setTabClicked] = useState("");
+   const [tabClicked, setTabClicked] = useState("Tab 1");
     
 
      function tabClickHandler(content){
@@ -22,8 +22,7 @@ const Tabs = ({tabs}) => {
              }
              </ul>
              {
-             tabClicked &&
-                <p>This is the content for {tabClicked}</p>
+                <p>This is the content for {tabClicked}.</p>
              }
         </div>
     )
